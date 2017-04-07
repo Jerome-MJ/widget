@@ -4,4 +4,5 @@
 
 - RadarView（雷达图）
 
-   ![image](https://github.com/Jerome-MJ/widget/raw/master/screenshots/radarview.webp)
+   ![image](https://github.com/Jerome-MJ/widget/raw/master/screenshots/radarview.gif)
+
