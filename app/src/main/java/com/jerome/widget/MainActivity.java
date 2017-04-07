@@ -1,5 +1,6 @@
 package com.jerome.widget;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         mData = new ArrayList<>();
-        mData.add(new MainItem("RadarView", "", "雷达图，通过开启与停止扫描雷达"));
-        mData.add(new MainItem("BitmapPolygon", "", "未知"));
-        mData.add(new MainItem("LinearGradientDemo", "", "未知"));
-        mData.add(new MainItem("LinearGradientText", "", "未知"));
-        mData.add(new MainItem("LinearGradientPicture", "", "未知"));
+        mData.add(new MainItem(R.layout.layout_radarview,"RadarView", "", "雷达图，通过开启与停止扫描雷达"));
+        mData.add(new MainItem(R.layout.layout_bitmapolygon,"BitmapPolygon", "", "未知"));
+        mData.add(new MainItem(R.layout.layout_lineargradientdemo,"LinearGradientDemo", "", "未知"));
+        mData.add(new MainItem(R.layout.layout_lineargradienttext,"LinearGradientText", "", "未知"));
+        mData.add(new MainItem(R.layout.layout_lineargradientpicture,"LinearGradientPicture", "", "未知"));
         mAdapter = new MainAdapter(R.layout.item_main, mData);
     }
 
@@ -42,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int position) {
                 //单机跳转
+                MainItem mainItem = mData.get(position);
+                Intent intent=new Intent(MainActivity.this,PreviewActivity.class);
+                intent.putExtra("layoutId",mainItem.mLayoutId);
+                intent.putExtra("title",mainItem.mTitle);
+                startActivity(intent);
             }
         });
 

@@ -27,5 +27,25 @@
         android:onClick="btnClose"
         android:text="关闭" />
 
+    <!--<qdx.radarview.shader.BitmapPolygon-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+
+    <!--<qdx.radarview.shader.LinearGradientDemo-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<qdx.radarview.shader.LinearGradientText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="塞纳河畔 左岸的咖啡\n我手一杯 品尝你的美"-->
+    <!--android:textColor="#ff0000"-->
+    <!--android:textSize="40sp" />-->
+
+    <!--<qdx.radarview.shader.LinearGradientPicture-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
 </RelativeLayout>
 
