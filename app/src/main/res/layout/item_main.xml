@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/item_main_iv_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/dlw" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_main_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_main_iv_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_main_iv_icon"
+        android:text="RadarView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_main_tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_main_tv_title"
+        android:layout_below="@id/item_main_tv_title"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:lines="2"
+        android:gravity="center_vertical"
+        android:text="可以理解为雷达图"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
